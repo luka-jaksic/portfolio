@@ -200,11 +200,29 @@ body {
   width: 100vh;
 }
 
+@media (max-width: 1250px) {
+  #mainLinks {
+    width: 100%;
+  }
+}
+
 #mainLinks ul {
   padding-left: 0px;
   margin-top: 20vh;
   list-style: none;
   text-align: center;
+}
+
+@media (max-width: 1250px) {
+  #mainLinks ul {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1250px) {
+  #mainLinks ul li {
+    width: 100%;
+  }
 }
 
 #mainLinks ul li button {
@@ -225,6 +243,12 @@ body {
   -webkit-transition: background-color .25s linear;
   transition: background-color .25s linear;
   font-size: 1.5em;
+}
+
+@media (max-width: 1250px) {
+  #mainLinks ul li button {
+    width: 100%;
+  }
 }
 
 #mainLinks ul li button:hover {

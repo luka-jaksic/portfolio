@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet"> 
+        <title>Luka Jaksic</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="js/projects.js"></script> 
+        <div id="navBarPortfolio">
+            <button onclick="document.location='index.html'">
+                &#9750; Home
+            </button>
+            <button onclick="document.location='work.html'">
+                &#10000; Work
+            </button>
+            <button onclick="document.location='links.html'">
+                &#10027; Links
+            </button>
+            <button onclick="document.location='skills.html'">
+                &#9783; Skills
+            </button>
+        </div>
+        <main id="mainPortfolio">
+            <div id="myProjects">
+                <ul>
+                    <li><button id="1">Portfolio v1</button></li>
+                    <li><button id="2">BeastEd</button></li>
+                    <li><button id="3">The Leap</button></li>
+                    <li><button id="4">Portfolio</button></li>
+                    <script type="text/javascript">
+                        document.getElementById("1").onclick =function(){
+                            document.getElementById("name").innerHTML = "Portfolio v1.0";
+                            document.getElementById("myTitles").innerHTML= "First template for a portfolio made in React.js for final project for High School graduation."
+                            document.getElementById("myTitles1").innerHTML= "<a href='https://morning-mountain-54450.herokuapp.com/'>React WebApp</a>"
+                        }
+                        document.getElementById("2").onclick =function(){
+                            document.getElementById("name").innerHTML = "BeastEd";
+                            document.getElementById("myTitles").innerHTML= "C# .Net Program designed for workout tracking and progress graphing."
+                            document.getElementById("myTitles1").innerHTML= "<a href='https://github.com/luka-jaksic/Beasted'>Git Repo</a>"
+                        }
+                        document.getElementById("3").onclick =function(){
+                            document.getElementById("name").innerHTML = "TheLeap";
+                            document.getElementById("myTitles").innerHTML= "FPS Game made in the Unity3D engine."
+                            document.getElementById("myTitles1").innerHTML= "<a href='https://lukajaksic.itch.io/the-leap-pre-alpha'>Itch.io</a>"
+                        }
+                        document.getElementById("4").onclick =function(){
+                            document.getElementById("name").innerHTML = "Portfolio (Current)";
+                            document.getElementById("myTitles").innerHTML= "You're here already! :D"
+                            document.getElementById("myTitles1").innerHTML= "Just press the home button if you wanna go back to the main page."
+                        }
+                    </script>
+                </ul>
+            </div>
+            <div id="nameInfoMain">
+                <p id="name">
+                    Portfolio v1.0
+                </p>
+                <p id="myTitles">
+                    First template for a portfolio made in React.js for final project for High School 
+                    graduation.
+                </p>
+                <p id="myTitles1">
+                    <a href='https://morning-mountain-54450.herokuapp.com/'>React WebApp</a>
+                </p>
+            </div>
+        </main>
+        <div class="footer">
+            &copy; Luka Jaksic 2020
+        </div>
+    </body>
+</html>
